@@ -189,11 +189,11 @@ p {
 
 .burger-menu {
     display: block;
-    font-size: 1em;
+    font-size: 1.8em;
     cursor: pointer;
     color: var(--primary-color);
     position: absolute;
-    right: 20px;
+    right: 2px;
     z-index: 1002;
 }
 
