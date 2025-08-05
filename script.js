@@ -73,19 +73,3 @@ window.addEventListener('scroll', () => {
 
 // Initialize first link as active
 document.querySelector('.nav-links a').classList.add('active');
-
-// Prevent horizontal scrolling on mobile
-window.addEventListener('scroll', function() {
-    if (window.innerWidth <= 768) {
-        if (window.scrollX !== 0) {
-            window.scrollTo(0, window.scrollY);
-        }
-    }
-});
-
-// Disable horizontal scroll on touch devices
-document.body.addEventListener('touchmove', function(e) {
-    if (e.touches.length === 1) {
-        e.preventDefault();
-    }
-}, { passive: false });
